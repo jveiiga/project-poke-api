@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { getAllPokemon, getPokemon } from './services/pokemon'
+import Header from './components/Header/Header'
+import Card from './components/Card/Card'
 
 
 import './App.css';
@@ -51,15 +53,19 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {pokemonData.map(({ name }) => (
-        <div key={ name }>
-          <div to={`/pokemonData/${name}`}>{name}</div>
+
+    <main className="App">
+    <Header />
+       <div className="card">
+            <div className="card__name">
+                {pokemonData.map((pokemon, i) => {
+                  return <Card kei={i} pokemon={pokemon} />;
+              })}
+            </div>
         </div>
-      ))}
-      <button onClick={prev}>Anterior</button>
-      <button onClick={next}>Próximo</button>
-    </div>
+      <button className="btn" onClick={prev}>Anterior</button>
+      <button className="btn" onClick={next}>Próximo</button>
+    </main>
   );
 }
 

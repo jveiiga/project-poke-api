@@ -1,0 +1,15 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card__name {
+    box-sizing: border-box;
+    padding: 10px 400px;
+    max-width: 800px;
+    box-shadow: 0 0 1em #c4c4c4;
+    border-radius: 6px;
+    margin: 5px 15px;
+}
