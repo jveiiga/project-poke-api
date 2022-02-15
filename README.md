@@ -7,7 +7,7 @@
 <h3 align="center">Não foi levado em consideração conceitos Mobile First.<h3/>
 <h3 align="center">Foi levado em consideração HTML semântico.<h3/>
 
-<h2 align="center"><a href="" alt="PokeApi" target="_blank">Clique aqui para ver meu projeto final!<a/><h2/> 
+<h2 align="center"><a target="_blank" href="" alt="PokeApi">Clique aqui para ver meu projeto final!<a/><h2/> 
   
 ## 🖥  Imagem
 
